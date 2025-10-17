@@ -1,0 +1,10 @@
+#carouselExampleControls {
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+
+#carouselExampleControls img {
+    width: 60%;
+    height: 600px;
+}
