@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SP2-Atividade 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <menu> <!-- Menu aqui (melhorar o menu depois, mas ta pronto)-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img id="logo-loja" src="imgs/logo-loja.png" alt="logo loja"></a>
+                <a class="navbar-brand" href="#"><img id="logo-loja" src="assets/imgs/logo-loja.png" alt="logo loja"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div style="display: flex; align-items: center; justify-content: center; flex: 1; min-width: 0;">
+                    <div class="principal-menu-box">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a style="margin-top: 5px; width: 100px;" class="nav-link active" aria-current="page" href="#"><img src="imgs/login.png" alt="login-icon"><span style="margin-left: 4px;">Login</span></a>
+                                <a class="login-button nav-link active" aria-current="page" href="#"><img src="assest/imgs/login.png" alt="login icon"><span style="margin-left: 4px;">Login</span></a>
                             </li>
                             <li class="nav-item">
-                                <a style="margin-top: 10px; width: 120px;" class="nav-link active" aria-current="page" href="#"><img src="imgs/heart.png" alt="favorites-icon"><span style="margin-left: 4px;">Favoritos</span></a>
+                                <a class="favorite-button nav-link active" aria-current="page" href="#"><img src="assets/imgs/heart.png" alt="favorites icon"><span style="margin-left: 4px;">Favoritos</span></a>
                             </li>   
                         <!--<li class="nav-item dropdown">
                                 <a style="margin-top: 12px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
@@ -33,28 +33,28 @@
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li> -->
-                            <li style="margin: 0px 10px 0px 10px;" class="nav-item">
-                                <a style="margin-top: 5px;" id="carrinho-menu" class="nav-link" href="#">
-                                    <div style="width: 120px; height: 50px; display: flex;">
-                                        <div style="margin: 8px 8px 0px 0px;">
-                                            <img style="position: static;" src="imgs/carrinho.png" alt="carrinho">
+                            <li class="carrinho-box nav-item">
+                                <a class="carrinho nav-link" href="#">
+                                    <div class="box-in-carrinho">
+                                        <div class="box-icon-carrinho">
+                                            <img src="assets/imgs/carrinho.png" alt="carrinho">
                                         </div>
-                                        <div style="display: flex; flex-flow: column; justify-content: center; ">
-                                            <p style="height: 20px; color: white;" class="p-0 m-0">carrinho</p>
-                                            <p style="width: 110px; color: white;" class="p-0 m-0">0 produtos</p>
+                                        <div class="box-text-carrinho">
+                                            <p class="p-0 m-0 text-carrinho">carrinho</p>
+                                            <p class="p-0 m-0 text-carrinho">0 produtos</p>
                                         </div>
                                     </div>
                                 </a>
                             </li>
                         </ul>
-                        <form style="flex: 1 1 auto; min-width: 0;" class="d-flex ms-3">
-                            <input style="flex: 1 1 auto; max-width: 70%;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <form class="d-flex ms-3 box-search">
+                            <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
-                    <ul style="margin-left: auto; margin-right: 0px;" class="navbar-nav mb-2 mb-lg-0" >
+                    <ul class="box-contact navbar-nav mb-2 mb-lg-0" >
                         <li class="nav-item">
-                            <a style="width: 110px;" class="nav-link" href="#">Nos-Contate</a>
+                            <a class="nav-link box-contact-text" href="#">Nos-Contate </a>
                         </li>
                     </ul>
                 </div>
@@ -65,65 +65,67 @@
         <h1>Game Mania</h1>
         <h2>Encontre os melhores perifericos gamers aqui</h2>
     </header>
-    <section><!--Destaques aqui-->
-        <div>
-            <h2>DESTAQUES</h2>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img id="banner-destaques" src="imgs/banner-1.jpg" class="d-block w-100" alt="banner-1">
+    <main>
+        <section><!--Destaques aqui-->
+            <div>
+                <h2>DESTAQUES</h2>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img id="banner-destaques" src="assets/imgs/banner-1.jpg" class="d-block w-100" alt="banner 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="banner-destaques" src="assets/imgs/banner-2.jpg" class="d-block w-100 banner-destaques" alt="banner 2">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img id="banner-destaques" src="imgs/banner-2.jpg" class="d-block w-100 banner-destaques" alt="banner-2">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
-    </section>
-    <section id="novidades-pai"><!--Novidades aqui-->
-        <div>
-            <h2>Novidades</h2>
+        </section>
+        <section id="novidades-pai"><!--Novidades aqui-->
             <div>
-                <h3>Notebook Gamer</h3>
-                <img src="imgs/notebook-gamer.jpg" alt="notebook gamer">
-                <input id="comprar1" type="button" value="Comprar">
-                <label for="comprar1">🛒</label>
-                <button><img src="imgs/heart.png" alt="botão de favoritar"></button>
+                <h2>Novidades</h2>
+                <div>
+                    <h3>Notebook Gamer</h3>
+                    <img src="assets/imgs/notebook-gamer.jpg" alt="notebook gamer">
+                    <input id="comprar1" type="button" value="Comprar">
+                    <label for="comprar1">🛒</label>
+                    <button><img src="assets/imgs/heart.png" alt="botão de favoritar"></button>
+                </div>
+                <div>
+                    <h3>Monitor Gamer</h3>
+                    <img src="assets/imgs/monitor-gamer.jpg" alt="monitor gamer">
+                    <input id="comprar2" type="button" value="Comprar">
+                    <label for="comprar2">🛒</label>
+                    <button><img src="assets/imgs/heart.png" alt="botão de favoritar"></button>
+                </div>
+                <div>
+                    <h3>RTX 4070</h3>
+                    <img src="assets/imgs/rtx-4070.jpg" alt="rtx 4070">
+                    <input id="comprar3" type="button" value="Comprar">
+                    <label for="comprar3">🛒</label>
+                    <button><img src="assets/imgs/heart.png" alt="botão de favoritar"></button>
+                </div>
+                <div>
+                    <h3>Gabinet Gamer</h3>
+                    <img src="assets/imgs/gabinet-gamer.jpg" alt="gabinet gamer">
+                    <input id="comprar4" type="button" value="Comprar">
+                    <label for="comprar4">🛒</label>
+                    <button><img src="assets/imgs/heart.png" alt="botão de favoritar"></button>
+                </div>
             </div>
-            <div>
-                <h3>Monitor Gamer</h3>
-                <img src="imgs/monitor-gamer.jpg" alt="monitor gamer">
-                <input id="comprar2" type="button" value="Comprar">
-                <label for="comprar2">🛒</label>
-                <button><img src="imgs/heart.png" alt="botão de favoritar"></button>
-            </div>
-            <div>
-                <h3>RTX 4070</h3>
-                <img src="imgs/rtx-4070.jpg" alt="rtx 4070">
-                <input id="comprar3" type="button" value="Comprar">
-                <label for="comprar3">🛒</label>
-                <button><img src="imgs/heart.png" alt="botão de favoritar"></button>
-            </div>
-            <div>
-                <h3>Gabinet Gamer</h3>
-                <img src="imgs/gabinet-gamer.jpg" alt="gabinet gamer">
-                <input id="comprar4" type="button" value="Comprar">
-                <label for="comprar4">🛒</label>
-                <button><img src="imgs/heart.png" alt="botão de favoritar"></button>
-            </div>
-        </div>
-    </section>
-    <section><!--Galeria aqui-->
-        
-    </section>
+        </section>
+        <section><!--Galeria aqui-->
+            
+        </section>
+    </main>
     <footer><!--Rodapé aqui-->
         
     </footer>

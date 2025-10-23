@@ -1,0 +1,112 @@
+body {
+    color: white;
+    background-color: #0b2866;
+}
+
+body > menu > nav {
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.principal-menu-box {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex: 1; 
+}
+
+.login-button {
+    margin-top: 5px; 
+    width: 100px;
+}
+
+.favorite-button {
+    margin-top: 10px; 
+    width: 120px;
+}
+
+.carrinho-box {
+    margin: 0px 10px 0px 10px;
+}
+
+#logo-loja {
+    width: 50px;
+    height: 50px;
+}
+
+.carrinho {
+    background-color: green;
+    padding: 7px;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+.carrinho:hover {
+    background-color: rgb(1, 92, 1);
+}
+
+.box-in-carrinho {
+    width: 120px; 
+    height: 50px; 
+    display: flex;
+}
+
+.box-icon-carrinho {
+    margin: 8px 8px 0px 0px;
+}
+
+.icon-carrinho {
+    position: static;
+}
+
+.box-text-carrinho {
+    display: flex; 
+    flex-flow: column; 
+    justify-content: center;
+}
+
+.text-carrinho {
+    height: 20px; 
+    color: white;
+}
+
+.box-search {
+    flex: 1 1 auto; 
+    min-width: 0;
+}
+
+.search {
+    flex: 1 1 auto; 
+    max-width: 70%;
+}
+
+.box-contact {
+    margin-left: auto; 
+    margin-right: 0px;
+}
+
+.box-contact-text {
+    width: 110px;
+}
+
+#carouselExampleControls {
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+
+#carouselExampleControls img {
+    width: 60%;
+    height: 600px;
+}
+
+img#banner-destaques {
+    height: 400px; 
+}
+
+@media screen and (max-width: 800px) {
+    img#banner-destaques {
+    height: 250px; 
+}
+}
