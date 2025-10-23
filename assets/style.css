@@ -3,16 +3,36 @@ body {
     background-color: #0b2866;
 }
 
-body > menu > nav {
+body > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-loja {
+    margin: 20px;
+}
+
+header > menu {
+    width: 100vw;
+    margin-block-start: 0px;
+    padding-left: 0px;
+}
+
+menu > nav {
     border-radius: 7px;
     margin-right: 10px;
 }
 
-.principal-menu-box {
+.box-for-navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-search-and-buttons {
     display: flex; 
     align-items: center; 
-    justify-content: center; 
-    flex: 1; 
+    flex: 0 1 80%;
 }
 
 .login-button {
@@ -25,18 +45,10 @@ body > menu > nav {
     width: 120px;
 }
 
-.carrinho-box {
+.box-carrinho {
     margin: 0px 10px 0px 10px;
-}
-
-#logo-loja {
-    width: 50px;
-    height: 50px;
-}
-
-.carrinho {
     background-color: green;
-    padding: 7px;
+    padding-left: 4px;
     border-radius: 7px;
     margin-left: auto;
     margin-top: 5px;
@@ -46,8 +58,8 @@ body > menu > nav {
     background-color: rgb(1, 92, 1);
 }
 
-.box-in-carrinho {
-    width: 120px; 
+.box-icon-img-carrinho {
+    width: 130px; 
     height: 50px; 
     display: flex;
 }
@@ -64,6 +76,7 @@ body > menu > nav {
     display: flex; 
     flex-flow: column; 
     justify-content: center;
+    margin-top: -5px;
 }
 
 .text-carrinho {
@@ -72,8 +85,7 @@ body > menu > nav {
 }
 
 .box-search {
-    flex: 1 1 auto; 
-    min-width: 0;
+    flex: 1 1 auto;
 }
 
 .search {
@@ -81,32 +93,45 @@ body > menu > nav {
     max-width: 70%;
 }
 
-.box-contact {
-    margin-left: auto; 
-    margin-right: 0px;
-}
-
 .box-contact-text {
-    width: 110px;
-}
-
-header {
-    background-image: url(imgs/background-header.jpg);
+    width: 150px;
 }
 
 #carouselExampleControls {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: table;
 }
 
 #carouselExampleControls img {
     width: 60%;
-    height: 400px;
+    height: 300px;
+}
+
+@media screen and (max-width: 991px) {
+    .carrinho-box {
+        margin: 0px 10px 0px 10px;
+    }
+    .icon-carrinho {
+        margin-left: 2px;
+    }
+
+    .box-search-and-buttons {
+        flex-flow: column;
+    }
+
+    .box-search {
+        width: 100%;
+    }
+
+    .box-for-navbar {
+        flex-flow: column;
+        align-items: normal;
+    }
 }
 
 @media screen and (max-width: 800px) {
     img#banner-destaques {
-    height: 250px; 
-}
+        height: 250px; 
+    }
 }

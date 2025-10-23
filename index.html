@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <menu> <!-- Menu aqui (melhorar o menu depois, mas ta pronto)-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img id="logo-loja" src="assets/imgs/logo-loja.png" alt="logo loja"></a>
+    <header>
+        <div class="logo-loja">
+            <img src="assets/imgs/logo-loja.png" alt="logo-loja">
+        </div>
+        <menu> <!-- Menu aqui (melhorar o menu depois, mas ta pronto)-->
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="principal-menu-box">
+                <div class="box-for-navbar collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="box-search-and-buttons">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                             <li class="nav-item">
                                 <a class="login-button nav-link active" aria-current="page" href="#"><img src="assets/imgs/login.png" alt="login icon"><span style="margin-left: 4px;">Login</span></a>
                             </li>
                             <li class="nav-item">
@@ -33,11 +35,11 @@
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li> -->
-                            <li class="carrinho-box nav-item">
+                            <li class="box-carrinho nav-item">
                                 <a class="carrinho nav-link" href="#">
-                                    <div class="box-in-carrinho">
+                                    <div class="box-icon-img-carrinho">
                                         <div class="box-icon-carrinho">
-                                            <img src="assets/imgs/carrinho.png" alt="carrinho">
+                                            <img class="icon-carrinho" src="assets/imgs/carrinho.png" alt="carrinho">
                                         </div>
                                         <div class="box-text-carrinho">
                                             <p class="p-0 m-0 text-carrinho">carrinho</p>
@@ -47,23 +49,19 @@
                                 </a>
                             </li>
                         </ul>
-                        <form class="d-flex ms-3 box-search">
+                        <form class="d-flex box-search">
                             <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
                     <ul class="box-contact navbar-nav mb-2 mb-lg-0" >
                         <li class="nav-item">
-                            <a class="nav-link box-contact-text" href="#">Nos-Contate </a>
+                            <a class="nav-link box-contact-text" href="#"> <img src="assets/imgs/phone.png" alt="icone de telefone"> Nos-Contate </a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-    </menu>
-    <header><!--Banner aqui-->
-        <h1>Game Mania</h1>
-        <h2>Encontre os melhores perifericos gamers aqui</h2>
+            </nav>
+        </menu>
     </header>
     <main>
         <section><!--Destaques aqui-->
@@ -71,10 +69,16 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets/imgs/banner-3.jpg" class="d-block w-100" alt="banner 1">
+                            <img src="assets/imgs/banner-1.jpg" class="d-block w-100" alt="banner de destaques">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/imgs/banner-4.jpg" class="d-block w-100" alt="banner 2">
+                            <img src="assets/imgs/banner-2.jpg" class="d-block w-100" alt="banner de destaques">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/imgs/banner-3.webp" class="d-block w-100" alt="banner de destaques">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/imgs/banner-4.jpg" class="d-block w-100" alt="banner de destaques">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
