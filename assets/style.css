@@ -102,11 +102,7 @@ header {
 
 #carouselExampleControls img {
     width: 60%;
-    height: 600px;
-}
-
-img#banner-destaques {
-    height: 400px; 
+    height: 400px;
 }
 
 @media screen and (max-width: 800px) {
