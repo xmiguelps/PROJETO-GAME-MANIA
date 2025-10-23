@@ -90,6 +90,10 @@ body > menu > nav {
     width: 110px;
 }
 
+header {
+    background-image: url(imgs/background-header.jpg);
+}
+
 #carouselExampleControls {
     width: 80%;
     margin: 0 auto;
