@@ -37,12 +37,35 @@ menu > nav {
 
 .login-button {
     margin-top: 5px; 
+    display: flex;
     width: 100px;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    border: white 1px solid;
+}
+
+.login-text {
+    padding-top: 5px;
+    margin: 0px 0px 0px 4px;
 }
 
 .favorite-button {
+    display: flex;
     margin-top: 10px; 
     width: 120px;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+
+.favorite-button:hover {
+    border: white 1px solid;
+}
+
+.favorite-text {
+    margin: 0px 0px 0px 4px;
 }
 
 .box-carrinho {
@@ -52,10 +75,11 @@ menu > nav {
     border-radius: 7px;
     margin-left: auto;
     margin-top: 5px;
+    transition: 0.3s;
 }
 
-.carrinho:hover {
-    background-color: rgb(1, 92, 1);
+.box-carrinho:hover {
+    background-color: #015c01;
 }
 
 .box-icon-img-carrinho {
@@ -104,8 +128,8 @@ menu > nav {
 }
 
 #carouselExampleControls img {
-    width: 60%;
-    height: 300px;
+    width: auto;
+    height: 290px;
 }
 
 @media screen and (max-width: 991px) {
@@ -130,8 +154,17 @@ menu > nav {
     }
 }
 
-@media screen and (max-width: 800px) {
-    img#banner-destaques {
-        height: 250px; 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+    #carouselExampleControls img {
+        width: auto;
+        height: 165px;
     }
+}
+
+.title-destaques {
+    margin: 55px;
+    margin-left: 150px;
 }
