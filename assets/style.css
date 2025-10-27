@@ -168,3 +168,63 @@ menu > nav {
     margin: 55px;
     margin-left: 150px;
 }
+
+.box-galeria-destaques {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-products {
+    background-image: linear-gradient(to bottom, #a51616,#520505);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.title-products {
+    text-indent: 8px;
+    margin: 10px 10px 15px 0px;
+}
+
+.products {
+    width: 250px;
+    height: 250px;
+    margin: 0px 25px 25px 25px;
+    background-color: azure;
+    border-radius: 3px;
+}
+
+.comprar {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: large;
+}
+
+.box-comprar-button {
+    width: 60px;
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.box-comprar-button:hover {
+    background-color: #014901;
+    cursor: pointer;
+}
+
+.comprar-button {
+    padding: 5px;
+}
+
+.favoriter-button {
+    background-color: transparent;
+    border: none;
+}
+
+.favorite { /*Mexer aqui*/
+    background-image: url(imgs/heart-red.png);
+    background-position: top left;
+    width: 32px;
+    height: 32px;
+}
