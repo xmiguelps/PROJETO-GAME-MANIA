@@ -177,6 +177,16 @@ menu > nav {
     margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: #2c4f9b 2px solid;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 90%;
+
+}
+
+.box-galeria:hover {
+    box-shadow: black 2px 2px 10px;
 }
 
 .box-products {
@@ -184,6 +194,7 @@ menu > nav {
     padding: 8px;
     border-radius: 10px;
     text-align: center;
+    margin: 30px 15px;
 }
 
 .title-products {
@@ -193,8 +204,8 @@ menu > nav {
 }
 
 .products {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 0px 25px 0px 25px;
     background-color: azure;
     border-radius: 3px;
@@ -240,6 +251,15 @@ menu > nav {
 .favoriter-button {
     background-color: transparent;
     border: none;
+}
+
+.favorite-icon {
+    transition: transform 0.3s ease;
+}
+
+.favorite-icon:hover {
+    transform: scale(1.1);
+    content: url(imgs/icons/favorite-button-hover.png);
 }
 
 .price {
