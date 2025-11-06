@@ -262,6 +262,7 @@ menu > nav {
 
 .favorite-icon {
     transition: transform 0.3s ease;
+    content: url(../imgs/icons/favorite-button.png);
 }
 
 .favorite-icon:hover {
@@ -350,3 +351,14 @@ footer {
     margin: 0px 5px;
 }
 
+.twitter:hover {
+    content: url(../imgs/icons/twitter-logo-hover.png);
+}
+
+.instagram:hover {
+    content: url(../imgs/icons/instagram-logo-hover.png);
+}
+
+.facebook:hover {
+    content: url(../imgs/icons/facebook-logo-hover.png);
+}
