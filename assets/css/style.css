@@ -262,7 +262,6 @@ menu > nav {
 
 .favorite-icon {
     transition: transform 0.3s ease;
-    content: url(../imgs/icons/favorite-button.png);
 }
 
 .favorite-icon:hover {
