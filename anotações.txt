@@ -1,1 +1,1 @@
-Fazer um hover para o os icones de rede social do footer
+Fazer contagem no botão de acessar a pagina de carrinho
