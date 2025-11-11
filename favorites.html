@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" rel="nofollow" target="_self" class="logo-loja">
+            <img src="assets/imgs/icons/logo-loja.png" alt="logo-loja">
+        </a>
+        <menu> <!-- Menu aqui -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="box-for-navbar collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="box-search-and-buttons">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                             <li class="nav-item">
+                                <a class="login-button nav-link active" aria-current="page" href="login.html" rel="nofollow" target="_self"><img src="assets/imgs/icons/login.png" alt="login icon"><p class=" login-text">Login</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="favorite-button nav-link active" aria-current="page" href="favorites.html" rel="nofollow" target="_self"><img src="assets/imgs/icons/heart.png" alt="favorites icon"><p class="p-0 favorite-text">Favoritos</p></a>
+                            </li>
+                            <li class="box-carrinho nav-item">
+                                <a class="carrinho nav-link" href="carrinho.html" rel="nofollow" target="_self">
+                                    <div class="box-icon-img-carrinho">
+                                        <div class="box-icon-carrinho">
+                                            <img class="icon-carrinho" src="assets/imgs/icons/carrinho.png" alt="carrinho">
+                                        </div>
+                                        <div class="box-text-carrinho">
+                                            <p class="p-0 m-0 text-carrinho">carrinho</p>
+                                            <p class="p-0 m-0 text-carrinho"><span class="numero-produtos">0</span> produtos</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <form class="d-flex box-search">
+                            <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                            <button class="search-button btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <ul class="box-contact navbar-nav mb-2 mb-lg-0" >
+                        <li class="nav-item">
+                            <a class="nav-link box-contact-text" href="contatos.html" rel="nofollow" target="_blank"> <img src="assets/imgs/icons/phone.png" alt="icone de telefone"> Nos-Contate </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </menu>
+    </header>
+    <main>
+        <h2 class="title-galerias">
+            <img src="assets/imgs/icons/heart.png" alt="icone de novidades"> Favoritos <img src="assets/imgs/icons/seta-direita.png" alt="seta para direita">
+        </h2>
+        <article class="box-galeria container-fluid">
+            <div class="box-products">
+                <h3 class="title-products">Notebook Gamer</h3>
+                <img class="products" src="assets/imgs/destaques/notebook-gamer.png" alt="notebook gamer">
+                <br>
+                <div class="box-text-products">
+                    <p class="price">R$7.599</p>
+                    <div>
+                        <input class="comprar" id="comprar1" type="button" value="Comprar">
+                        <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                        <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button-hover.png" alt="botão de favoritar"></button>
+                    </div>
+                </div>
+                </div>
+            <div class="box-products">
+                <h3 class="title-products">Monitor Gamer</h3>
+                <img class="products" src="assets/imgs/destaques/monitor-gamer.png" alt="monitor gamer">
+                <br>
+                <div class="box-text-products">
+                    <p class="price">R$966,99</p>
+                    <div>
+                        <input class="comprar" id="comprar2" type="button" value="Comprar">
+                        <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                        <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button-hover.png" alt="botão de favoritar"></button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -13,6 +13,10 @@ body > header {
     margin: 20px;
 }
 
+header {
+    background-color: #071a42;
+}
+
 header > menu {
     width: 100vw;
     margin-block-start: 0px;
@@ -22,6 +26,7 @@ header > menu {
 menu > nav {
     border-radius: 7px;
     margin-right: 10px;
+    margin-top: 20px;
 }
 
 .box-for-navbar {
@@ -181,8 +186,8 @@ menu > nav {
 
 .box-galeria {
     margin-top: 30px;
-    padding: 0px 50px;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     border: #2c4f9b 2px solid;
     border-radius: 10px;
@@ -363,22 +368,16 @@ footer {
 
 .box-final-rodape {
     background-color: #303236;
-    margin-top: 10px;
 }
 
 .logo-rodape {
     width: 50px;
     height: 50px;
-    margin-right: 20px;
 }
 
 .copyright {
     text-align: justify;
-}
-
-.box-rede-social {
-    width: 110px;
-    margin-left: 20px;
+    font-size: small;
 }
 
 .twitter:hover {

@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded' , () => {
         });
     });
 
-    const contagem = document.querySelector('.numero-produtos');
+    let cont = 0;
+    const contCarrinho = document.querySelector('.numero-produtos');
     const comprarButton = document.querySelectorAll('.comprar-button');
     comprarButton.forEach(img => {
         img.addEventListener('click', (event) => {
@@ -45,13 +46,16 @@ document.addEventListener('DOMContentLoaded' , () => {
                 img.src = 'assets/imgs/icons/comprar-button-check.png'
                 img.classList.remove('comprar-button')
                 img.classList.add('comprar-button-2')
+                cont++
+                contCarrinho.innerText = `${cont}`
             } else {
                 img.src = 'assets/imgs/icons/comprar-button.png'
                 img.classList.remove('comprar-button-2')
                 img.classList.add('comprar-button')
+                cont--
+                contCarrinho.innerText = `${cont}`
             }
         });
     });
-    
 });
 

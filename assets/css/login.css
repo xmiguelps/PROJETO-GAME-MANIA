@@ -17,6 +17,16 @@
     box-shadow: #0000003d 1px 1px 10px;
 }
 
+.back-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
 .form-login {
     margin-top: 20px;
 }
