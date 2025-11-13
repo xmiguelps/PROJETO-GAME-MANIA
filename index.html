@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Mania</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imgs/favicons/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -25,10 +25,10 @@
                                 <a class="login-button nav-link active" aria-current="page" href="login.html" rel="nofollow" target="_self"><img src="assets/imgs/icons/login.png" alt="login icon"><p class=" login-text">Login</p></a>
                             </li>
                             <li class="nav-item">
-                                <a class="favorite-button nav-link active" aria-current="page" href="favorites.html" rel="nofollow" target="_blank"><img src="assets/imgs/icons/heart.png" alt="favorites icon"><p class="p-0 favorite-text">Favoritos</p></a>
+                                <a class="favorite-button nav-link active" aria-current="page" href="favorites.html" rel="nofollow" target="_self"><img src="assets/imgs/icons/heart.png" alt="favorites icon"><p class="p-0 favorite-text">Favoritos</p></a>
                             </li>
                             <li class="box-carrinho nav-item">
-                                <a class="carrinho nav-link" href="carrinho.html" rel="nofollow" target="_blank">
+                                <a class="carrinho nav-link" href="carrinho.html" rel="nofollow" target="_self">
                                     <div class="box-icon-img-carrinho">
                                         <div class="box-icon-carrinho">
                                             <img class="icon-carrinho" src="assets/imgs/icons/carrinho.png" alt="carrinho">
@@ -89,86 +89,88 @@
                 <img src="assets/imgs/icons/destaques.png" alt="icone de novidades"> Destaques <img src="assets/imgs/icons/seta-direita.png" alt="seta para direita">
             </h2>
             <p class="text-galerias">Veja aqui os produtos mais vendidos em nossa loja:</p>
-            <article class="box-galeria container-fluid">
-                <div class="box-products">
-                    <h3 class="title-products">Notebook Gamer</h3>
-                    <img class="products" src="assets/imgs/destaques/notebook-gamer.png" alt="notebook gamer">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$7.599</p>
-                        <div>
-                            <input class="comprar" id="comprar1" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+            <div class="d-flex justify-content-center">
+                <article class="box-galeria container-fluid">
+                    <div class="box-products">
+                        <h3 class="title-products">Notebook Gamer</h3>
+                        <img class="products" src="assets/imgs/destaques/notebook-gamer.png" alt="notebook gamer">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$7.599</p>
+                            <div>
+                                <input class="comprar" id="comprar1" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Monitor Gamer</h3>
-                    <img class="products" src="assets/imgs/destaques/monitor-gamer.png" alt="monitor gamer">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$966,99</p>
-                        <div>
-                            <input class="comprar" id="comprar2" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                    <div class="box-products">
+                        <h3 class="title-products">Monitor Gamer</h3>
+                        <img class="products" src="assets/imgs/destaques/monitor-gamer.png" alt="monitor gamer">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$966,99</p>
+                            <div>
+                                <input class="comprar" id="comprar2" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">RTX 5070</h3>
-                    <img class="products" src="assets/imgs/destaques/rtx5070.png" alt="placa de video rtx 5070">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$5.400</p>
-                        <div>
-                            <input class="comprar" id="comprar3" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                    <div class="box-products">
+                        <h3 class="title-products">RTX 5070</h3>
+                        <img class="products" src="assets/imgs/destaques/rtx5070.png" alt="placa de video rtx 5070">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$5.400</p>
+                            <div>
+                                <input class="comprar" id="comprar3" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Gabinet Gamer</h3>
-                    <img class="products" src="assets/imgs/destaques/gabinet-gamer.png" alt="gabinet gamer">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$759,99</p>
-                        <div>
-                            <input class="comprar" id="comprar4" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                    <div class="box-products">
+                        <h3 class="title-products">Gabinet Gamer</h3>
+                        <img class="products" src="assets/imgs/destaques/gabinet-gamer.png" alt="gabinet gamer">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$759,99</p>
+                            <div>
+                                <input class="comprar" id="comprar4" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Galaxy S24</h3>
-                    <img class="products" src="assets/imgs/destaques/galaxy-s24.png" alt="celular galaxy s24">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$5000</p>
-                        <div>
-                            <input class="comprar" id="comprar5" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" data-alt="assets/imgs/icons/favorite-button-hover.png" alt="botão de favoritar"></button>
+                    <div class="box-products">
+                        <h3 class="title-products">Galaxy S24</h3>
+                        <img class="products" src="assets/imgs/destaques/galaxy-s24.png" alt="celular galaxy s24">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$5000</p>
+                            <div>
+                                <input class="comprar" id="comprar5" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" data-alt="assets/imgs/icons/favorite-button-hover.png" alt="botão de favoritar"></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">PC Gamer Completo</h3>
-                    <img class="products" src="assets/imgs/destaques/pc-gamer.png" alt="Computador gamer completo">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$7599</p>
-                        <div>
-                            <input class="comprar" id="comprar6" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                    <div class="box-products">
+                        <h3 class="title-products">PC Gamer Completo</h3>
+                        <img class="products" src="assets/imgs/destaques/pc-gamer.png" alt="Computador gamer completo">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$7599</p>
+                            <div>
+                                <input class="comprar" id="comprar6" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
         <section> <!--Novidades aqui-->
             <h2 class="title-galerias">
@@ -182,246 +184,250 @@
             </article>
         </section>
         <section> <!--Galerias aqui-->
-            <h2 class="title-galerias">
-                <img src="assets/imgs/icons/products.png" alt="icone de novidades"> Galeria de produtos <img src="assets/imgs/icons/seta-direita.png" alt="seta para direita">
-            </h2>
-            <p class="text-galerias">Veja aqui diversos produtos que a Game Mania pode te oferecer:</p>
-            <article class="box-galeria container-fluid">
-                <div class="box-products">
-                    <h3 class="title-products">Caderia Gamer Azul</h3>
-                    <img class="products" src="assets/imgs/produtos/cadeira-gamer-blue.webp" alt="cadeira gamer azul">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$579,00</p>
-                        <div>
-                            <input class="comprar" id="comprar7" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+            <div class="d-flex flex-column">
+                <h2 class="title-galerias">
+                    <img src="assets/imgs/icons/products.png" alt="icone de novidades"> Galeria de produtos <img src="assets/imgs/icons/seta-direita.png" alt="seta para direita">
+                </h2>
+                <p class="text-galerias">Veja aqui diversos produtos que a Game Mania pode te oferecer:</p>
+                <div class="d-flex justify-content-center">
+                    <article class="box-galeria container-fluid">
+                        <div class="box-products">
+                            <h3 class="title-products">Cadeira Gamer Azul</h3>
+                            <img class="products" src="assets/imgs/produtos/cadeira-gamer-blue.webp" alt="cadeira gamer azul">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$579,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar7" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Cooler RGB</h3>
-                    <img class="products" src="assets/imgs/produtos/cooler.jpg" alt="cooler para processador">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$299,99</p>
-                        <div>
-                            <input class="comprar" id="comprar8" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Cooler RGB</h3>
+                            <img class="products" src="assets/imgs/produtos/cooler.jpg" alt="cooler para processador">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$299,99</p>
+                                <div>
+                                    <input class="comprar" id="comprar8" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Headset Gamer Branco</h3>
-                    <img class="products" src="assets/imgs/produtos/headset-gamer-white.jpg" alt="headset gamer branco">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$768,99</p>
-                        <div>
-                            <input class="comprar" id="comprar9" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Headset Gamer Branco</h3>
+                            <img class="products" src="assets/imgs/produtos/headset-gamer-white.jpg" alt="headset gamer branco">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$768,99</p>
+                                <div>
+                                    <input class="comprar" id="comprar9" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Monitor Gamer SF</h3>
-                    <img class="products" src="assets/imgs/produtos/monitor-gamer-SF.webp" alt="Monitor Gamer da SF">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$899,00</p>
-                        <div>
-                            <input class="comprar" id="comprar10" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Monitor Gamer SF</h3>
+                            <img class="products" src="assets/imgs/produtos/monitor-gamer-SF.webp" alt="Monitor Gamer da SF">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$899,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar10" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Notebook Acer</h3>
-                    <img class="products" src="assets/imgs/produtos/notebook-acer.jpg" alt="notebook acer">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$3299,00</p>
-                        <div>
-                            <input class="comprar" id="comprar11" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Notebook Acer</h3>
+                            <img class="products" src="assets/imgs/produtos/notebook-acer.jpg" alt="notebook acer">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$3299,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar11" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Mouse Gamer</h3>
-                    <img class="products" src="assets/imgs/produtos/mouse-gamer.jpg" alt="Mouse Gamer">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$157,00</p>
-                        <div>
-                            <input class="comprar" id="comprar12" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Mouse Gamer</h3>
+                            <img class="products" src="assets/imgs/produtos/mouse-gamer.jpg" alt="Mouse Gamer">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$157,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar12" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Processador AMD</h3>
-                    <img class="products" src="assets/imgs/produtos/processador-AMD.jpg" alt="Processador AMD">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$580,00</p>
-                        <div>
-                            <input class="comprar" id="comprar13" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Processador AMD</h3>
+                            <img class="products" src="assets/imgs/produtos/processador-AMD.jpg" alt="Processador AMD">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$580,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar13" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Memoria ram 16GB</h3>
-                    <img class="products" src="assets/imgs/produtos/memoria-ram-16gb.jpg" alt="Memoria ram para computador 16gb">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$241,00</p>
-                        <div>
-                            <input class="comprar" id="comprar14" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Memoria ram 16GB</h3>
+                            <img class="products" src="assets/imgs/produtos/memoria-ram-16gb.jpg" alt="Memoria ram para computador 16gb">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$241,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar14" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Teclado Gamer RGB</h3>
-                    <img class="products" src="assets/imgs/produtos/teclado-gamer-RGB.jpg" alt="Teclado gamer RGB">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$468,99</p>
-                        <div>
-                            <input class="comprar" id="comprar15" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Teclado Gamer RGB</h3>
+                            <img class="products" src="assets/imgs/produtos/teclado-gamer-RGB.jpg" alt="Teclado gamer RGB">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$468,99</p>
+                                <div>
+                                    <input class="comprar" id="comprar15" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Water Coller</h3>
-                    <img class="products" src="assets/imgs/produtos/water-coller.jpg" alt="water coller para processador">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$459,00</p>
-                        <div>
-                            <input class="comprar" id="comprar16" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Water Coller</h3>
+                            <img class="products" src="assets/imgs/produtos/water-coller.jpg" alt="water coller para processador">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$459,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar16" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Mesa Gamer RGB</h3>
-                    <img class="products" src="assets/imgs/produtos/mesa-gamer-RGB.jpg" alt="mesa gamer RGB">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$541,99</p>
-                        <div>
-                            <input class="comprar" id="comprar17" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Mesa Gamer RGB</h3>
+                            <img class="products" src="assets/imgs/produtos/mesa-gamer-RGB.jpg" alt="mesa gamer RGB">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$541,99</p>
+                                <div>
+                                    <input class="comprar" id="comprar17" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Cadeira Gamer Branca</h3>
-                    <img class="products" src="assets/imgs/produtos/cadeira-gamer-white.jpg" alt="cadeira gamer branca">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$542,00</p>
-                        <div>
-                            <input class="comprar" id="comprar18" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Cadeira Gamer Branca</h3>
+                            <img class="products" src="assets/imgs/produtos/cadeira-gamer-white.jpg" alt="cadeira gamer branca">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$542,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar18" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Headset Gamer Preto</h3>
-                    <img class="products" src="assets/imgs/produtos/headset-gamer-black.jpg" alt="Headset Gamer Preto">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$637,99</p>
-                        <div>
-                            <input class="comprar" id="comprar19" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Headset Gamer Preto</h3>
+                            <img class="products" src="assets/imgs/produtos/headset-gamer-black.jpg" alt="Headset Gamer Preto">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$637,99</p>
+                                <div>
+                                    <input class="comprar" id="comprar19" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Memoria ram 8GB</h3>
-                    <img class="products" src="assets/imgs/produtos/memoria-ram-8gb.jpg" alt="memoria ram 8 giga bytes">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$159,00</p>
-                        <div>
-                            <input class="comprar" id="comprar20" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Memoria ram 8GB</h3>
+                            <img class="products" src="assets/imgs/produtos/memoria-ram-8gb.jpg" alt="memoria ram 8 giga bytes">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$159,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar20" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Mesa Gamer</h3>
-                    <img class="products" src="assets/imgs/produtos/mesa-gamer.jpg" alt="Mesa Gamer">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$387,00</p>
-                        <div>
-                            <input class="comprar" id="comprar21" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Mesa Gamer</h3>
+                            <img class="products" src="assets/imgs/produtos/mesa-gamer.jpg" alt="Mesa Gamer">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$387,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar21" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Teclado gamer</h3>
-                    <img class="products" src="assets/imgs/produtos/teclado-gamer.jpg" alt="teclado gamer estilo retro">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$411,00</p>
-                        <div>
-                            <input class="comprar" id="comprar22" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Teclado gamer</h3>
+                            <img class="products" src="assets/imgs/produtos/teclado-gamer.jpg" alt="teclado gamer estilo retro">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$411,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar22" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Galaxy Z Flip</h3>
-                    <img class="products" src="assets/imgs/produtos/galaxy-zflip.webp" alt="smartphone samsung galaxy z flip">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$4399,00</p>
-                        <div>
-                            <input class="comprar" id="comprar23" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Galaxy Z Flip</h3>
+                            <img class="products" src="assets/imgs/produtos/galaxy-zflip.webp" alt="smartphone samsung galaxy z flip">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$4399,00</p>
+                                <div>
+                                    <input class="comprar" id="comprar23" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-products">
-                    <h3 class="title-products">Iphone 15</h3>
-                    <img class="products" src="assets/imgs/produtos/iphone-15.webp" alt="Iphone 15">
-                    <br>
-                    <div class="box-text-products">
-                        <p class="price">R$3470,99</p>
-                        <div>
-                            <input class="comprar" id="comprar24" type="button" value="Comprar">
-                            <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
-                            <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                        <div class="box-products">
+                            <h3 class="title-products">Iphone 15</h3>
+                            <img class="products" src="assets/imgs/produtos/iphone-15.webp" alt="Iphone 15">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">R$3470,99</p>
+                                <div>
+                                    <input class="comprar" id="comprar24" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </article>
+            </div>
         </section>
     </main>
     <footer> <!--Rodapé aqui-->
@@ -472,5 +478,6 @@
     </footer>
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>

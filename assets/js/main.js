@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded' , () => {
     const galerias = document.querySelectorAll('.box-galeria');
     const searchButton = document.querySelector('.search-button');
 
-    // Só adiciona o listener se o botão de busca existir na página
     if (searchButton) {
         searchButton.addEventListener('click', (event) => {
             event.preventDefault();
@@ -42,7 +41,6 @@ document.addEventListener('DOMContentLoaded' , () => {
     const contCarrinho = document.querySelector('.numero-produtos');
     const comprarButton = document.querySelectorAll('.comprar-button');
 
-    // Atacha listeners somente se existirem botões de comprar na página
     if (comprarButton && comprarButton.length) {
         comprarButton.forEach(img => {
             img.addEventListener('click', (event) => {
@@ -75,3 +73,40 @@ document.addEventListener('DOMContentLoaded' , () => {
         })
     })
 });
+
+$(function () {
+    function getCart() {
+        try { return JSON.parse(localStorage.getItem('cart') || '[]'); }
+        catch (e) { return []; }
+    }
+    function saveCart(cart) { localStorage.setItem('cart', JSON.stringify(cart)); }
+
+    function renderCart() {
+        var $container = $('#cart-itens');
+        if ($container.length === 0) return;
+        var cart = getCart();
+        $container.empyt();
+        if (!cart || cart.length === 0) {
+            $('#empyt-cart-message').removeClass('d-none');
+            $('#subtotal-value').text(formatPrice(0));
+            $('#total-value').text(formatPrice(0));
+            
+        }
+    }
+
+    $(document).on('click', '.comprar-button', function(e) {
+        e.preventDefault();
+        var $product = $(this).closest('.box-products');
+        var title = $product.find('.title-products').text().trim();
+        var priceText = $product.find('price').text().trim();
+        var cleaner = (priceText || '').replace(/[^0-9,.-]+/g, '').replace('.', '').replace(',', '.');
+        var price = parseFloat(cleaned) || 0
+        var img = $product.find('img').attr('src') || '';
+        var id = $product.data('id') || title.replace(/\s+/g,'-').toLowerCase();
+        var cart = getCart();
+        var found = cart.find(function(it){ return it.id === id});
+        if (found) found.qty = (found.qty || 1) + 1; else cart.push({id:id, title:title, price:price, img:img, qty:1});
+        saveCart(cart);
+        renderCart();
+    });
+})

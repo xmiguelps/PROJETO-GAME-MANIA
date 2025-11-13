@@ -169,6 +169,11 @@ menu > nav {
     }
 }
 
+.box-destaques {
+    display: flex;
+    flex-flow: column;
+}
+
 .title-galerias {
     margin: 55px 0px 30px 150px;
 }
@@ -185,15 +190,14 @@ menu > nav {
 }
 
 .box-galeria {
-    margin-top: 30px;
+    margin: 30px 20px 0px 20px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     border: #2c4f9b 2px solid;
     border-radius: 10px;
     transition: 0.3s;
-    width: 90%;
-
+    width: auto;
 }
 
 .box-galeria:hover {
@@ -212,7 +216,7 @@ menu > nav {
     padding: 8px;
     border-radius: 10px;
     text-align: center;
-    margin: 30px 15px
+    margin: 30px 15px;
 }
 
 .title-products {
@@ -487,10 +491,7 @@ footer {
 
 .box-other-login:hover {
     background-color: #d1d1d1;
-}
-
-.box-other-login:hover {
-    color: inherit;
+    color: #000;
 }
 
 .btn-other-login {
@@ -525,4 +526,31 @@ footer {
 
 .none-decoration {
     text-decoration: none;
+}
+
+.box-total-price {
+    border: #2c4f9b 2px solid;
+    border-radius: 5px;
+}
+
+.box-empyt-cart {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: auto;
+    align-items: center;
+}
+
+.box-galeria-cart {
+    margin: 30px 20px 0px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: #2c4f9b 2px solid;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 75%;
 }
