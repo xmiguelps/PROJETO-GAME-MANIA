@@ -60,26 +60,28 @@
             <h2 class="title-galerias">
                 <img src="assets/imgs/icons/carrinho.png" alt="icone de novidades"><p class="p-0 m-0 m-2 d-inline">Carrinho</p><img src="assets/imgs/icons/seta-direita.png" alt="seta para direita">
             </h2>
-            <div class="d-flex">
-                <article id="cart-itens" class="box-galeria-cart container-fluid">
-                </article>
+            <div class="d-flex justify-content-center ">
+                <section id="cart-itens" class="box-galeria-cart container-fluid justify-content-start">
+                </section>
                 <article class="box-total-price">
-                    <h3>Resumo do Pedido</h3>
-                    <div>
-                        <h4>Subtotal</h4>
-                        <p>R$ 0,00</p>
+                    <h3 class="h5 mb-5">Resumo do Pedido</h3>
+                    <div class="d-flex justify-content-between">
+                        <p>Subtotal</p>
+                        <p id="subtotal-value">R$ 0,00</p>
                     </div>
-                    <div>
-                        <h4>Frete</h4>
-                        <p>A calcular</p>
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0">Frete</p>
+                        <p class="mb-0" id="shipping-value">A calcular</p>
                     </div>
                     <hr>
-                    <div>
-                        <h4>Total</h4>
-                        <p>R$ 0,00</p>
+                    <div class="d-flex justify-content-between">
+                        <p><strong>Total</strong></p>
+                        <p id="total-value"><strong>R$ 0,00</strong></p>
                     </div>
-                    <button></button>
-                    <button></button>
+                    <div class="d-flex flex-column">
+                        <button class="btn btn-primary mb-2" id="checkout-button">Finalizar Compra</button>
+                        <a href="" class="btn btn-secondary">Continuar Comprando</a>
+                    </div>
                 </article>
             </div>
             <article id="empty-cart-message" class="box-empyt-cart container-fluid">

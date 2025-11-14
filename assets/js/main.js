@@ -81,6 +81,13 @@ $(function () {
     }
     function saveCart(cart) { localStorage.setItem('cart', JSON.stringify(cart)); }
 
+    function formatPrice(num) {
+        return Number(num || 0).toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+    }
+
     function renderCart() {
         var $container = $('#cart-itens');
         if ($container.length === 0) return;
@@ -90,8 +97,16 @@ $(function () {
             $('#empyt-cart-message').removeClass('d-none');
             $('#subtotal-value').text(formatPrice(0));
             $('#total-value').text(formatPrice(0));
-            
+            return;
         }
+        $('#empyt-cart-message').addClass('d-none')
+        cart.forEach(function(item) {
+            var line = item.price * item.qty;
+            var $art = $('<article class="product-cart d-flex align-items-start p-4">' + '<div class="d-flex align-items-center justify-content-between w-100">' + '<div class="d-flex align-items-center">' + '<img class="img-product-cart mx-2" src="'+item.img+'" alt="'+item.title+'">' + '<span>'+item.title+'</span>'+ '</div>' + '<div class="d-flex">' + '<div class="d-flex align-items-center">' + '<button class="btn c-white">+</button>' + '<input class="qty-input" type="number" min="1" value="'+item.qty+'">' + '<button class="btn c-white">-</button>' + '</div>' + '<div class="d-flex align-items-center ms-5">' + '<span><strong>R$ 599,99</strong></span>' + '</div>' + '<div class="d-flex align-items-center ms-3">' + '<a href="" class="text-danger">Remover</a>' + '</div></div></div></article>');
+            $container.append($art);
+        });
+        //bindCartEvents();
+        //updateTotals();
     }
 
     $(document).on('click', '.comprar-button', function(e) {
